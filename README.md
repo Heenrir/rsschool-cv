@@ -1,1 +1,1 @@
-# rsschool-cv
+https://heenrir.github.io/rsschool-cv/cv
