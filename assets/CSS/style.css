@@ -50,3 +50,31 @@ body {
     height: 65px;
     background: rgba(0.3, 0.3, 0.3, 0.3);
 }
+
+.navigation_name {
+    position: absolute;
+    height: 50px;
+    width: 270px;
+    left: 40px;
+    top: 15px;
+}
+
+.Name {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Name:hover,
+.Name:active {
+    width: 270px;
+    color:rgba(255, 255, 255, 0.4)
+}
+
+.me {
+    position: absolute;
+    height: 350px;
+    width: 270px;
+    left: 0px;
+    top: 80px;
+
+    visibility: hidden;
+}
