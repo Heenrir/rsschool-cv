@@ -44,19 +44,19 @@ body {
 }
 
 /*header*/
-
 .header {
     width: 100%;
     height: 65px;
     background: rgba(0.3, 0.3, 0.3, 0.3);
 }
 
+/*NAME*/
 .navigation_name {
     position: absolute;
+    margin: 15px 49px;
+    display: flex;
     height: 50px;
     width: 270px;
-    left: 40px;
-    top: 15px;
 }
 
 .Name {
@@ -69,12 +69,27 @@ body {
     color:rgba(255, 255, 255, 0.4)
 }
 
+ .me {
+    opacity: 1;
+    transform: translateX(0%) translateY(495px);
+    visibility: visible;
+}
+
+.Name:hover .me {
+    opacity: 1;
+    transform: translateX(0%) translatey(495px);
+    visibility: visible;
+}
+
 .me {
     position: absolute;
     height: 350px;
     width: 270px;
-    left: 0px;
-    top: 80px;
-
+    opacity: 0;
+    top: -420px;
     visibility: hidden;
+    transform: translateX(0%) translatey(0px);
+    transition: 0.01s;
+    background: url(../IMG/me.jpg) no-repeat;
+    background-size: cover;
 }
