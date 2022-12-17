@@ -99,6 +99,21 @@ body {
     height: 650px;
 }
 
+/*about me*/
+
+.navigation_about {
+    position: absolute;
+    display: flex;
+    height: auto;
+    width: auto;
+    top: 23px;
+    left: 350px;
+}
+
+.about {
+    color: rgba(225, 255, 255, 0.7);
+}
+
 /*strangths*/
 
 .strengths {
@@ -203,3 +218,5 @@ body {
     text-align: left;
     color: rgba(225, 255, 255, 0.8);
 }
+
+/*
