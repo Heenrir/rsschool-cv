@@ -168,3 +168,38 @@ body {
     text-align: center;
     color: rgba(225, 255, 255, 0.8);
 }
+
+/*code*/
+
+.code_example {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 650px;
+    top: 125px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(1, 100, 32, 0.5);    
+}
+
+.code_ex_text {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+.code_ex {
+    width: auto;
+    height: auto;
+
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(225, 255, 255, 0.8);
+}
