@@ -225,9 +225,9 @@ body {
     box-sizing: border-box;
 
     position: absolute;
-    width: 300px;
+    width: 190px;
     height: 200px;
-    left: 650px;
+    left: 400px;
     top: 335px;
 
     border-width: 3px;
@@ -256,3 +256,45 @@ body {
 
 /*contact*/
 
+.contacts {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 650px;
+    top: 335px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(1, 100, 32, 0.5);
+}
+
+.contact {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8)
+}
+
+.github {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color:chocolate;
+}
+
+.mail {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+.discord {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
