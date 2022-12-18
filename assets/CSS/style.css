@@ -1,9 +1,337 @@
+:root {
+    --max-width: 1366px;
+    --content-width: 1200px;
+    --text: white;
+  }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+body {
+    width: 1366px;
+    background: url(../background/forestback.png) no-repeat;
+}
+
+/*osn_div*/
+
+.toplist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+/*header*/
+.header {
+    width: 100%;
+    height: 65px;
+    background: rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+/*NAME*/
+.navigation_name {
+    position: absolute;
+    display: flex;
+    height: auto;
+    width: auto;
+    top: 15px;
+    left: 40px;
+}
+
+.Name {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Name:hover,
+.Name:active {
+    width: auto;
+    height: auto;
+    top: 16px;
+    left: 40px;
+    color:rgba(255, 255, 255, 0.4)
+}
+
+.Name:hover .me {
+    opacity: 1;
+    transform: translateX(0%) translatey(495px);
+    visibility: visible;
+}
+
+.me {
+    position: absolute;
+    height: 350px;
+    width: 270px;
+    opacity: 0;
+    top: -420px;
+    visibility: hidden;
+    transform: translateX(0%) translatey(0px);
+    transition: 0.01s;
+    background: url(../IMG/me.jpg) no-repeat;
+    background-size: cover;
+}
+
+/*main*/
+
+.main {
+    width: 100%;
+    height: 650px;
+}
+
+/*about me*/
+
+.navigation_about {
+    position: absolute;
+    display: flex;
+    height: auto;
+    width: auto;
+    top: 23px;
+    left: 350px;
+}
+
+.about {
+    color: rgba(225, 255, 255, 0.7);
+}
+
+/*strangths*/
+
+.strengths {
+    box-sizing: border-box;
+
+    position: inherit;
+    width: 190px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(1, 100, 32, 0.5);
+}
+
+.streng {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.streng_text {
+    width: auto;
+    height: auto;
+
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 800;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8) ;
+}
+
+/*skill*/
+
+.skills {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 190px;
+    height: 200px;
+    left: 400px;
+    top: 115px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(1, 100, 32, 0.5);    
+}
+
+.skill {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+.skill_text {
+    width: auto;
+    height: auto;
+
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 800;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+/*code*/
+
+.code_example {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 650px;
+    top: 115px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(1, 100, 32, 0.5);    
+}
+
+.code_ex_text {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+.code_ex {
+    width: auto;
+    height: auto;
+
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+/*language*/
+
+.language {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 190px;
+    height: 200px;
+    left: 400px;
+    top: 335px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(1, 100, 32, 0.5);
+}
+
+.lang {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+.lang_text {
+    width: auto;
+    height: auto;
+
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+/*contact*/
+
+.contacts {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 650px;
+    top: 335px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(1, 100, 32, 0.5);
+}
+
+.contact {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8)
+}
+
+.github {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color:chocolate;
+}
+
+.mail {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+.discord {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgba(225, 255, 255, 0.8);
+}
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background: grey;
+}
+
+.worker {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    left: 5px;
+    margin-top: 37px;
+}
+
+.workergit {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color:black;
+}
+
+.year {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 1300px;
+    top: 757px
+}
+
+.rsscool {
+    position: absolute;
+    left: 1200px;
+    top: 735px;
 }
